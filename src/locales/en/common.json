@@ -8,15 +8,15 @@
     },
     {
       "label": "Services",
-      "href": "/en/#work-experience"
+      "href": "#experiencia-laboral"
     },
     {
       "label": "Projects",
-      "href": "/en/#projects"
+      "href": "#proyectos"
     },
     {
       "label": "About us",
-      "href": "/en/#about-me"
+      "href": "#nosotros"
     }
   ],
   "hero": {
@@ -35,19 +35,34 @@
           "title": "Tourism Digital Marketing",
           "time": ["2020"],
           "description": "We design complete digital strategies for the tourism sector. From social media advertising campaigns and Google Ads to content management and SEO positioning, we help hotels, travel agencies and tour operators increase their online visibility and generate more bookings.",
-          "list": ["Social Media Campaigns", "Google Ads & SEM", "Email Marketing", "SEO Positioning"]
+          "list": [
+            "Social Media Campaigns",
+            "Google Ads & SEM",
+            "Email Marketing",
+            "SEO Positioning"
+          ]
         },
         {
           "title": "Web Development for Tourism",
           "time": ["2020"],
           "description": "We create modern, optimized and conversion-focused websites for tourism businesses. We develop platforms with responsive design, intuitive navigation, booking system integration and search engine optimization, combining creativity with cutting-edge technology.",
-          "list": ["Responsive Web Design", "Performance Optimization", "Booking Integration", "Technical SEO"]
+          "list": [
+            "Responsive Web Design",
+            "Performance Optimization",
+            "Booking Integration",
+            "Technical SEO"
+          ]
         },
         {
           "title": "Tourism Market Analysis",
           "time": ["2020"],
           "description": "We perform comprehensive tourism market analyses to identify growth opportunities. We evaluate competition, sector trends, consumer behavior and key metrics to define effective strategies that maximize return on investment.",
-          "list": ["Competition Research", "Trend Analysis", "Metrics & KPIs", "Growth Strategies"]
+          "list": [
+            "Competition Research",
+            "Trend Analysis",
+            "Metrics & KPIs",
+            "Growth Strategies"
+          ]
         }
       ]
     }
@@ -58,26 +73,32 @@
       {
         "title": "Discoverlaguajira.travel",
         "description": "We developed Discover La Guajira as a modern website, with a vibrant design, clear navigation and dynamic features focused on SEO, highlighting the desert, the sea and the culture.",
-        "image": "/src/images/projects/esteli-buses-project.jpg",
+        "image": "/src/images/projects/discover-la-guajira-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Government Project",
-        "preview": "View Website"
+        "codeUrl": "#",
+        "preview": "View Website",
+        "previewUrl": "https://discoverlaguajira.travel"
       },
       {
         "title": "Visitvalle.travel",
         "description": "We developed Visit Valle as an innovative website, with an inspiring design, intuitive layout, and interactive tools focused on SEO, showcasing culture, music, salsa, and magical towns.",
-        "image": "/src/images/projects/ana-rangel-portafolio.jpg",
+        "image": "/src/images/projects/visit-valle-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Government Project",
-        "preview": "View Case"
+        "codeUrl": "#",
+        "preview": "View Case",
+        "previewUrl": "https://visitvalle.travel"
       },
       {
         "title": "Providencia.travel",
         "description": "We developed Providencia as a modern website, with a fresh design, smooth usability, and optimized functions focused on SEO, reflecting island life, sea, culture, and gastronomy.",
-        "image": "/src/images/projects/calculadora-payoneer-project.jpg",
+        "image": "/src/images/projects/providencia-travel-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Government Project",
-        "preview": "View Case"
+        "codeUrl": "#",
+        "preview": "View Case",
+        "previewUrl": "https://providencia.travel"
       }
     ]
   },

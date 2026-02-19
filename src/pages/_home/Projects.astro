@@ -7,22 +7,35 @@ const { title, projects } = t('projects', {
 })
 ---
 
-<section id={title.toLowerCase()} class="projects">
+<section id="proyectos" class="projects">
   <h2>
     <span>{title}</span>
   </h2>
   {
-    projects.map(({ title, description, image, techs, code, preview }) => (
-      <CardProject
-        src={image}
-        alt={title}
-        title={title}
-        description={description}
-        techs={techs}
-        code={code}
-        preview={preview}
-      />
-    ))
+    projects.map(
+      ({
+        title,
+        description,
+        image,
+        techs,
+        code,
+        codeUrl,
+        preview,
+        previewUrl
+      }) => (
+        <CardProject
+          src={image}
+          alt={title}
+          title={title}
+          description={description}
+          techs={techs}
+          code={code}
+          codeUrl={codeUrl}
+          preview={preview}
+          previewUrl={previewUrl}
+        />
+      )
+    )
   }
 </section>
 

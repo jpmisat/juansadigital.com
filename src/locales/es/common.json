@@ -16,7 +16,7 @@
     },
     {
       "label": "Nosotros",
-      "href": "#sobre-mi"
+      "href": "#nosotros"
     }
   ],
   "hero": {
@@ -29,25 +29,44 @@
   "experience": {
     "title": "Servicios Principales",
     "jobs": {
-      "jobs_title": ["Marketing Digital", "Desarrollo Web", "Análisis de Mercado"],
+      "jobs_title": [
+        "Marketing Digital",
+        "Desarrollo Web",
+        "Análisis de Mercado"
+      ],
       "jobs_description": [
         {
           "title": "Marketing Digital Turístico",
           "time": ["2020"],
           "description": "Diseñamos estrategias digitales completas para el sector turístico. Desde campañas de publicidad en redes sociales y Google Ads hasta gestión de contenido y posicionamiento SEO, ayudamos a hoteles, agencias de viajes y operadores de tours a aumentar su visibilidad online y generar más reservas.",
-          "list": ["Campañas en Redes Sociales", "Google Ads & SEM", "Email Marketing", "Posicionamiento SEO"]
+          "list": [
+            "Campañas en Redes Sociales",
+            "Google Ads & SEM",
+            "Email Marketing",
+            "Posicionamiento SEO"
+          ]
         },
         {
           "title": "Desarrollo Web para Turismo",
           "time": ["2020"],
           "description": "Creamos sitios web modernos, optimizados y enfocados en conversión para empresas turísticas. Desarrollamos plataformas con diseño responsivo, navegación intuitiva, integración de sistemas de reservas y optimización para buscadores, combinando creatividad con tecnología de vanguardia.",
-          "list": ["Diseño Web Responsivo", "Optimización de Rendimiento", "Integración de Reservas", "SEO Técnico"]
+          "list": [
+            "Diseño Web Responsivo",
+            "Optimización de Rendimiento",
+            "Integración de Reservas",
+            "SEO Técnico"
+          ]
         },
         {
           "title": "Análisis de Mercado Turístico",
           "time": ["2020"],
           "description": "Realizamos análisis exhaustivos del mercado turístico para identificar oportunidades de crecimiento. Evaluamos la competencia, tendencias del sector, comportamiento del consumidor y métricas clave para definir estrategias efectivas que maximicen el retorno de inversión.",
-          "list": ["Investigación de Competencia", "Análisis de Tendencias", "Métricas y KPIs", "Estrategias de Crecimiento"]
+          "list": [
+            "Investigación de Competencia",
+            "Análisis de Tendencias",
+            "Métricas y KPIs",
+            "Estrategias de Crecimiento"
+          ]
         }
       ]
     }
@@ -58,26 +77,32 @@
       {
         "title": "Discoverlaguajira.travel",
         "description": "Desarrollamos Discover La Guajira como un sitio web moderno, con un diseño vibrante, navegación clara y características dinámicas enfocadas en SEO, resaltando el desierto, el mar y la cultura.",
-        "image": "/src/images/projects/esteli-buses-project.jpg",
+        "image": "/src/images/projects/discover-la-guajira-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Proyecto Gubernamental",
-        "preview": "Revisar Web"
+        "codeUrl": "#",
+        "preview": "Revisar Web",
+        "previewUrl": "https://discoverlaguajira.travel"
       },
       {
         "title": "Visitvalle.travel",
         "description": "Desarrollamos Visit Valle como un sitio web innovador, con un diseño inspirador, layout intuitivo y herramientas interactivas enfocadas en SEO, destacando la cultura, la música, la salsa y los pueblos mágicos.",
-        "image": "/src/images/projects/ana-rangel-portafolio.jpg",
+        "image": "/src/images/projects/visit-valle-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Proyecto Gubernamental",
-        "preview": "Ver Caso"
+        "codeUrl": "#",
+        "preview": "Ver Caso",
+        "previewUrl": "https://visitvalle.travel"
       },
       {
         "title": "Providencia.travel",
         "description": "Desarrollamos Providencia como un sitio web moderno, con un diseño fresco, usabilidad fluida y funciones optimizadas enfocadas en SEO, reflejando la vida isleña, el mar, la cultura y la gastronomía.",
-        "image": "/src/images/projects/calculadora-payoneer-project.jpg",
+        "image": "/src/images/projects/providencia-travel-turismo.jpg",
         "techs": ["Astro", "CSS", "JavaScript", "SEO"],
         "code": "Proyecto Gubernamental",
-        "preview": "Ver Caso"
+        "codeUrl": "#",
+        "preview": "Ver Caso",
+        "previewUrl": "https://providencia.travel"
       }
     ]
   },

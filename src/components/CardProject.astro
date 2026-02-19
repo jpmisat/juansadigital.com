@@ -11,10 +11,22 @@ interface Props {
   description: string
   techs: string[]
   code: string
+  codeUrl?: string
   preview: string
+  previewUrl?: string
 }
 
-const { src, alt, title, description, techs, code, preview } = Astro.props
+const {
+  src,
+  alt,
+  title,
+  description,
+  techs,
+  code,
+  codeUrl,
+  preview,
+  previewUrl
+} = Astro.props
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/images/projects/*.{jpeg,jpg,png}'
@@ -27,7 +39,7 @@ if (!images[src])
 
 <section class="card-project">
   <div>
-    <a href="#">
+    <a href={previewUrl || '#'}>
       <Picture
         src={images[src]()}
         alt={alt}
@@ -39,7 +51,7 @@ if (!images[src])
     </a>
   </div>
   <div class="description">
-    <h3><a href="#">{title}</a></h3>
+    <h3><a href={previewUrl || '#'}>{title}</a></h3>
     <div class="badges">
       {
         techs.map((tech) => {
@@ -56,14 +68,22 @@ if (!images[src])
     </div>
     <p>{description}</p>
     <div class="links">
-      <a href="#">
-        <Icon name="github" size={24} />
-        {code}
-      </a>
-      <a href="#">
-        <Icon name="link" size={24} />
-        {preview}
-      </a>
+      {
+        codeUrl && (
+          <a href={codeUrl} target="_blank" rel="noopener noreferrer">
+            <Icon name="github" size={24} />
+            {code}
+          </a>
+        )
+      }
+      {
+        previewUrl && (
+          <a href={previewUrl} target="_blank" rel="noopener noreferrer">
+            <Icon name="link" size={24} />
+            {preview}
+          </a>
+        )
+      }
     </div>
   </div>
 </section>

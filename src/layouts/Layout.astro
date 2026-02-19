@@ -27,7 +27,7 @@ const { title, description, metaRobots } = options
 ---
 
 <!doctype html>
-<html class="dark" {...getHtmlAttrs()}>
+<html {...getHtmlAttrs()}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,6 +65,7 @@ const { title, description, metaRobots } = options
       body::-webkit-scrollbar-thumb {
         background: var(--scrollbar-thumb);
         border-radius: 0.25rem;
+        background-color: var(--scrollbar-thumb);
       }
 
       @media (any-hover: hover) {
@@ -115,7 +116,18 @@ const { title, description, metaRobots } = options
     />
 
     <script is:inline>
-      if (localStorage.getItem('dark-theme') === 'true') {
+      // In this project, 'dark' class means Light Mode (white background)
+      const getThemePreference = () => {
+        if (
+          typeof localStorage !== 'undefined' &&
+          localStorage.getItem('dark-theme')
+        ) {
+          return localStorage.getItem('dark-theme') === 'true'
+        }
+        return window.matchMedia('(prefers-color-scheme: light)').matches
+      }
+
+      if (getThemePreference()) {
         document.documentElement.classList.add('dark')
       } else {
         document.documentElement.classList.remove('dark')

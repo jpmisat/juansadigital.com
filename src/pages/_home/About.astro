@@ -1,26 +1,20 @@
 ---
-import felixicaza from '@images/felixicaza.jpg'
+import juan from '@images/juan.jpeg'
 import { Picture } from 'astro:assets'
 import { t } from 'i18n:astro'
 
 const { title, subtitle, description } = t('about', {
   returnObjects: true
 })
-
-const normalizeTitle = title
-  .toLowerCase()
-  .replaceAll(' ', '-')
-  .normalize('NFD')
-  .replace(/[\u0300-\u036f]/g, '')
 ---
 
-<section id={normalizeTitle} class="about">
+<section id="nosotros" class="about">
   <h2>{title}</h2>
   <section class="info">
     <div class="picture">
       <Picture
-        src={felixicaza}
-        alt="Felix Icaza"
+        src={juan}
+        alt="JuansaDigital Team"
         width={366}
         height={361}
         formats={['avif', 'webp']}

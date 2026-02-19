@@ -365,7 +365,7 @@ const links = t('navbar', { returnObjects: true })
 </script>
 
 <script>
-  const toggleSwitchs = document.querySelectorAll('.toggle')
+  const toggleSwitches = document.querySelectorAll('.toggle')
   const toggleThumbs = document.querySelectorAll('.toggle-thumb')
 
   // Establecemos una variable global
@@ -390,12 +390,15 @@ const links = t('navbar', { returnObjects: true })
     localStorage.setItem('dark-theme', String(state))
   }
 
-  // toggleDarkMode(getScheme.matches)
-  // Reemplazamos el valor obtenido por la variable getScheme
-  // por el valor que esté guardado en localStorage, para que
-  // al cargar la página verifique el valor almacenado en
-  // localStorage
-  toggleDarkMode(localStorage.getItem('dark-theme') === 'true')
+  // Inicializamos el estado basado en localStorage
+  if (localStorage.getItem('dark-theme')) {
+    darkModeState = localStorage.getItem('dark-theme') === 'true'
+  } else {
+    darkModeState = window.matchMedia('(prefers-color-scheme: light)').matches
+  }
+
+  // Sincronizamos la UI
+  toggleDarkMode(darkModeState)
 
   // Escuchamos los cambios en las configuración del
   // del sistema operativo para alternar de tema
@@ -411,7 +414,7 @@ const links = t('navbar', { returnObjects: true })
     setSchemeState(darkModeState)
   })
 
-  toggleSwitchs.forEach((toggle) => {
+  toggleSwitches.forEach((toggle) => {
     toggle.addEventListener('change', () => {
       darkModeState = !darkModeState
 
