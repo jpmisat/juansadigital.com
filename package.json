@@ -1,23 +1,23 @@
 {
   "name": "juansadigital-astro",
   "version": "0.1.1",
-  "description": "Unicorn Sparkle es la plantilla de portafolio definitiva para desarrolladores que quieren brillar.",
+  "description": "JuansaDigital, agencia especializada en Marketing Turístico y Desarrollo Web en Santa Marta, Colombia.",
   "keywords": [
     "portfolio",
     "astro",
-    "porfolio-template",
-    "astrojs",
-    "astro-template"
+    "turismo",
+    "marketing-digital",
+    "desarrollo-web"
   ],
   "bugs": {
-    "url": "https://github.com/UXCorpRangel/portfolios-dev/issues"
+    "url": "https://github.com/jpmisat/juansadigital.com/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UXCorpRangel/portfolios-dev.git"
+    "url": "https://github.com/jpmisat/juansadigital.com.git"
   },
   "license": "MIT",
-  "author": "UXCorpRangel - Felix Icaza <fx.joliett17@gmail.com>",
+  "author": "JuansaDigital <contacto@juansadigital.com>",
   "type": "module",
   "scripts": {
     "astro": "astro",
